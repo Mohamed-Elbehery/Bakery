@@ -30,12 +30,18 @@
   transform: translateX(0);
 }
 
-.item-one:nth-child(2) {
-  transition-delay: 0.3s;
+@media screen and (min-width: 650px) {
+  .item-one:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+
+  .item-one:nth-child(3) {
+    transition-delay: 0.6s;
+  }
 }
 
-.item-one:nth-child(3) {
-  transition-delay: 0.6s;
+.overflow {
+  overflow: hidden;
 }
 /* End Variables */
 /* Start Global Rules */
@@ -51,7 +57,6 @@ html {
 }
 body {
   font-family: "Alegreya";
-  overflow-x: hidden;
 }
 ul {
   list-style: none;
@@ -224,7 +229,7 @@ header nav ul .menu ul li a:hover {
 /* Start Landing */
 .landing {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-color: #1f2021;
   background-image: url("../images/drew-coffman-1872.jpg");
   background-position: center center;
@@ -641,6 +646,20 @@ header nav ul .menu ul li a:hover {
   max-width: 100%;
   height: auto;
   margin: 10px 0 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-bottom-row img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer-bottom-row img {
+    max-width: 70%;
+    height: auto;
+  }
 }
 
 .footer-bottom-row .row-bottom-one p {
