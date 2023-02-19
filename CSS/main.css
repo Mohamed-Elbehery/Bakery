@@ -4,6 +4,7 @@
   --section-padding: 90px;
 }
 
+/*! Animations and imgs */
 .hidden {
   opacity: 0;
   transition: 1s;
@@ -28,6 +29,10 @@
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+img {
+  border-radius: 3.5%;
 }
 
 @media screen and (min-width: 650px) {
