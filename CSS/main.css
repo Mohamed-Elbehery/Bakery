@@ -93,6 +93,20 @@ header .container i {
 header .logo img {
   height: 48px;
 }
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0.75rem 0;
+  }
+
+  header .logo img {
+    height: calc(48px * 0.7);
+  }
+
+  header .container #menu-bar,
+  header .container #x-mark {
+    font-size: 1.3rem;
+  }
+}
 header nav {
   flex: 1;
   display: flex;
