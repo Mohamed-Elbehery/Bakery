@@ -93,7 +93,7 @@ header .container i {
 header .logo img {
   height: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header {
     padding: 0.75rem 0;
   }
@@ -793,5 +793,12 @@ header nav ul .menu ul li a:hover {
     width: 100%;
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .container nav ul .menu ul {
+    top: auto;
+    bottom: -355%;
   }
 }
